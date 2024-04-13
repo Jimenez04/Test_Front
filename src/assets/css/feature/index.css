@@ -1,0 +1,199 @@
+:root {
+    --primary_color: #F58435;
+    --lightcian: #068488;
+    --lightblue: #00c6cf;
+    --blue: #121437;
+    --lightgreen: #d9eddf;
+    --lightgreen2: #dce9dc;
+    --white: #ffffff;
+}
+
+main{
+    width: 100%;
+    background: rgba(245, 132, 53, 0.1);
+}
+
+.flex{
+    display: flex;
+}
+
+.center{
+    justify-content: center;
+}
+
+.table{
+    background-color: var(--white);
+}
+
+#head{
+    background: rgba(148, 99, 69, 0.1);
+    justify-content: space-evenly;
+    padding: 0 50px;
+    border-radius: 15px 15px 0  0;
+}
+#head > div{
+    padding: 16px 0px;
+    color: var(--primary_color);
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#body{
+    height: 60vh;
+    overflow: scroll;
+}
+.line{
+    border-bottom: 2px solid var(--primary_color);
+}
+.radius{
+    border-radius: 15px;
+}
+#content_table{
+    margin: 0 50px;
+}
+#content_table > div{
+    padding: 20px 0 !important;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.column_one{
+    width: 30%;
+}
+.column_two{
+    width: 30%;
+}
+.column_three{
+    width: 10%;
+}
+.column_four{
+    width: 20%;
+}
+.column_five{
+    width: 10%;
+}
+
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+section > div{
+    width: 60%;
+    height: 80%;
+}
+
+
+.btn{
+    width: 120px;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #B4876C;
+cursor: pointer;
+}
+
+.information_container{
+    margin: 0 0 0 40px;
+}
+
+.back, .new{
+    background-color: transparent;
+    border-color: #B4876C;
+    margin: 30px 0 0 0px;
+    border-style: solid;
+}
+h1{
+    font-size: 50px;
+}
+.attributes_container{
+    grid-template-areas: 
+            "type time"
+            "place place"
+            "mag magnit"
+            "tsun tsun";
+}
+.type_container{
+    grid-area: type;
+}
+.time_container{
+    grid-area: time;
+}
+.place_container{
+    grid-area: place;
+}
+.mag_container{
+    grid-area: mag;
+}
+.magnitude_container{
+    grid-area: magnit;
+}
+.tsunami_container{
+    grid-area: tsun;
+}
+
+label{
+    font-weight: 900;
+    font-size: 1.25rem;
+}
+
+.coordinates_container, .comments_container{
+    margin-top: 2rem;
+}
+.coordinates_title_container label, .links_title_container label, .comments_title_container label{
+    font-size: 2.5rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 300px 300px;
+    row-gap: 1.25rem;
+}
+.coordinates_container_info{
+grid-template-areas: "longiitude latitude";
+margin-top: 1rem;
+}
+.links_info_container{
+margin-top: 1rem;
+}
+
+
+
+
+
+.circular_progress{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+#selects_container{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+#page_select select{
+   width: 80px;
+}
+
+#mg_select select{
+    width: 50px;
+ }
+ /*  */
+.pagination{
+    margin: 20px auto;
+    width: fit-content;
+}
+.pagination ul button{
+    color: var(--primary_color);
+}
